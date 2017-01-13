@@ -1,0 +1,22 @@
+{
+    "extends": "standard",
+    "parser": "babel-eslint",
+    "rules": {
+        "indent": ["error", 4],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true,
+                "optionalDependencies": false,
+                "peerDependencies": false
+            }
+        ]
+    },
+    "plugins": [
+      "import"
+    ],
+    "env": {
+        "node": true,
+        "commonjs": true
+    }
+}
